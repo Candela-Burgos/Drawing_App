@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b9b4ffc2;
+    padding: 2em;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #b9b4ff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 0 #3b2dff;
+}
+
+canvas {
+    background-color: #fff;
+    width: 100%;
+}
+
+.toolbox {
+    background-color: #aba4ff;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.tool {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box {
+  background-color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 530px) {
+    .box {
+        width: 30px;
+        height: 30px;
+        font-size: 1.3rem;
+    }
+}

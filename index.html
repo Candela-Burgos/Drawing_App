@@ -7,13 +7,20 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <canvas id="canvas" width="800" height="700"></canvas>
-        <div class="toolbox">
-            <button id="decrease">-</button>
-            <span id="size">10</span>
-            <button id="increase">+</button>
-            <input type="color" id="color">
-            <button id="clear">X</button>
+        <div class="container">
+            <canvas id="canvas" width="800" height="700"></canvas>
+            <div class="toolbox">
+                <div class="tool">
+                    <button class="box pointer" id="decrease">-</button>
+                    <span class="box" id="size">10</span>
+                    <button class="box pointer" id="increase">+</button>
+                    <input class="box pointer" type="color" id="color">
+                </div>
+                
+                <div class="btn">
+                    <button class="box pointer" id="clear">&times;</button>
+                </div>
+            </div>
         </div>
     
         <script src="js/script.js"></script>
